@@ -455,9 +455,16 @@
 
             .project-live-preview iframe {
                   width: 100%;
-                  height: 500px;
+                  height: 100%;
+                  aspect-ratio: 16 / 9;
+                  display: block;
                   border: none;
                   background: #111;
+            }
+
+            /* Make the whole live view area fill the iframe naturally */
+            .project-live-preview {
+                  height: auto;
             }
 
             .live-badge {
@@ -1569,14 +1576,15 @@
                               <a href="https://github.com/Beshoy-Ashraf/Maksby_APi.git" class="btn-sm-ghost"
                                     target="_blank">GitHub →</a>
 
+
                         </div>
                         <div class="project-live-preview">
                               <div class="live-badge">
                                     ● Live Preview
                               </div>
 
-                              <iframe src="https://maksby-a-pi.vercel.app/login" title="Maksby Live Preview"
-                                    loading="lazy" allowfullscreen>
+                              <iframe src="https://maksby-a-pi.vercel.app" title="Maksby Live Preview" loading="lazy"
+                                    allowfullscreen>
                               </iframe>
                         </div>
 
