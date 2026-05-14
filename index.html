@@ -453,7 +453,7 @@
                   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
 
                   width: 100%;
-                  height: min(1000px, 85vh);
+                  height: 950px;
                   position: relative;
             }
 
@@ -465,8 +465,21 @@
 
                   transform: scale(0.72);
                   transform-origin: top left;
+            }
 
-                  overflow: hidden;
+            /* MOBILE */
+            @media (max-width: 768px) {
+                  .project-live-preview {
+                        height: 700px;
+                  }
+
+                  .project-live-preview iframe {
+                        width: 220%;
+                        height: 220%;
+
+                        transform: scale(0.45);
+                        transform-origin: top left;
+                  }
             }
 
             .live-badge {
