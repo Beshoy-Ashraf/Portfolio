@@ -451,20 +451,22 @@
                   background: rgba(255, 255, 255, 0.03);
                   backdrop-filter: blur(10px);
                   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+
+                  width: 100%;
+                  height: min(1000px, 85vh);
+                  position: relative;
             }
 
             .project-live-preview iframe {
-                  width: 100%;
-                  height: 100%;
-                  aspect-ratio: 16 / 9;
-                  display: block;
+                  width: 140%;
+                  height: 140%;
                   border: none;
                   background: #111;
-            }
 
-            /* Make the whole live view area fill the iframe naturally */
-            .project-live-preview {
-                  height: auto;
+                  transform: scale(0.72);
+                  transform-origin: top left;
+
+                  overflow: hidden;
             }
 
             .live-badge {
@@ -1008,8 +1010,8 @@
 
             .contact-grid {
                   display: grid;
-                  grid-template-columns: 1fr 1fr;
-                  gap: 64px;
+                  grid-template-columns: 1fr;
+                  gap: 40px;
                   align-items: start;
             }
 
