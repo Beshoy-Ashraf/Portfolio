@@ -24,9 +24,9 @@
                   --hint: #64748b;
                   --border: #e2e8f0;
                   --border-soft: #cbd5e1;
-                  --accent: #2563eb;
-                  --accent-dark: #1d4ed8;
-                  --accent-bg: #dbeafe;
+                  --accent: #7c5cff;
+                  --accent-dark: #512bd4;
+                  --accent-bg: #ede9fe;
                   --font-display: 'Syne', sans-serif;
                   --font-body: 'DM Sans', sans-serif;
                   --font-mono: 'DM Mono', monospace;
@@ -81,7 +81,7 @@
             }
 
             .nav-logo span {
-                  color: #60a5fa;
+                  color: #a78bfa;
             }
 
             .nav-links {
@@ -100,7 +100,7 @@
             }
 
             .nav-links a:hover {
-                  color: #60a5fa;
+                  color: #a78bfa;
             }
 
             /* SECTIONS */
@@ -128,7 +128,25 @@
                   font-weight: 500;
                   letter-spacing: 0.12em;
                   text-transform: uppercase;
-                  color: #60a5fa;
+                  color: #a78bfa;
+            }
+
+            .section-label .route-tag {
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 8px;
+                  text-transform: none;
+                  letter-spacing: 0;
+            }
+
+            .section-label .route-verb {
+                  font-size: 10px;
+                  font-weight: 700;
+                  letter-spacing: 0.02em;
+                  padding: 2px 6px;
+                  border-radius: 4px;
+                  background: rgba(167, 139, 250, 0.15);
+                  color: #a78bfa;
             }
 
             .section-label::after {
@@ -136,7 +154,7 @@
                   flex: 1;
                   max-width: 60px;
                   height: 1px;
-                  background: #60a5fa;
+                  background: #a78bfa;
                   opacity: 0.4;
             }
 
@@ -160,11 +178,11 @@
                   width: 200%;
                   height: 200%;
                   background: linear-gradient(135deg,
-                              rgba(37, 99, 235, 0.03) 0%,
-                              rgba(37, 99, 235, 0.08) 25%,
-                              rgba(37, 99, 235, 0.03) 50%,
-                              rgba(37, 99, 235, 0.06) 75%,
-                              rgba(37, 99, 235, 0.03) 100%);
+                              rgba(124, 92, 255, 0.03) 0%,
+                              rgba(124, 92, 255, 0.08) 25%,
+                              rgba(124, 92, 255, 0.03) 50%,
+                              rgba(124, 92, 255, 0.06) 75%,
+                              rgba(124, 92, 255, 0.03) 100%);
                   background-size: 400% 400%;
                   animation: gradientShift 15s ease infinite;
                   pointer-events: none;
@@ -179,7 +197,7 @@
                   width: 600px;
                   height: 600px;
                   border-radius: 50%;
-                  background: radial-gradient(circle, rgba(37, 99, 235, 0.06) 0%, transparent 70%);
+                  background: radial-gradient(circle, rgba(124, 92, 255, 0.06) 0%, transparent 70%);
                   animation: floatBubble 20s ease-in-out infinite;
                   pointer-events: none;
             }
@@ -244,7 +262,7 @@
             }
 
             .hero-subtitle .rotator {
-                  color: #60a5fa;
+                  color: #a78bfa;
                   font-weight: 600;
                   display: inline-block;
                   min-width: 160px;
@@ -270,20 +288,20 @@
                   align-items: center;
                   gap: 8px;
                   padding: 13px 28px;
-                  background: #2563eb;
+                  background: #7c5cff;
                   color: #fff;
                   font-family: var(--font-body);
                   font-size: 14px;
                   font-weight: 500;
                   border-radius: 8px;
-                  border: 1.5px solid #2563eb;
+                  border: 1.5px solid #7c5cff;
                   cursor: pointer;
                   text-decoration: none;
                   transition: background 0.2s, transform 0.15s;
             }
 
             .btn-solid:hover {
-                  background: #1d4ed8;
+                  background: #512bd4;
                   transform: translateY(-1px);
             }
 
@@ -293,19 +311,19 @@
                   gap: 8px;
                   padding: 13px 28px;
                   background: transparent;
-                  color: #60a5fa;
+                  color: #a78bfa;
                   font-family: var(--font-body);
                   font-size: 14px;
                   font-weight: 500;
                   border-radius: 8px;
-                  border: 1.5px solid #60a5fa;
+                  border: 1.5px solid #a78bfa;
                   cursor: pointer;
                   text-decoration: none;
                   transition: background 0.2s, color 0.2s, transform 0.15s;
             }
 
             .btn-ghost:hover {
-                  background: rgba(37, 99, 235, 0.15);
+                  background: rgba(124, 92, 255, 0.15);
                   transform: translateY(-1px);
             }
 
@@ -371,14 +389,14 @@
                   width: 72px;
                   height: 72px;
                   border-radius: 50%;
-                  background: linear-gradient(135deg, rgba(37, 99, 235, 0.2), #334155);
+                  background: linear-gradient(135deg, rgba(124, 92, 255, 0.2), #334155);
                   display: flex;
                   align-items: center;
                   justify-content: center;
                   font-family: var(--font-display);
                   font-size: 22px;
                   font-weight: 800;
-                  color: #60a5fa;
+                  color: #a78bfa;
                   margin-bottom: 12px;
                   border: 2px solid #334155;
             }
@@ -433,6 +451,102 @@
             .stack-item img {
                   width: 16px;
                   height: 16px;
+            }
+
+            /* SIGNATURE: live API console */
+            .console {
+                  background: #0b0f1a;
+                  border: 1px solid #334155;
+                  border-radius: 10px;
+                  overflow: hidden;
+                  font-family: var(--font-mono);
+            }
+
+            .console-bar {
+                  display: flex;
+                  align-items: center;
+                  gap: 10px;
+                  padding: 10px 14px;
+                  background: #111827;
+                  border-bottom: 1px solid #334155;
+            }
+
+            .method-badge {
+                  font-size: 11px;
+                  font-weight: 700;
+                  letter-spacing: 0.04em;
+                  color: #0b0f1a;
+                  background: #a78bfa;
+                  border-radius: 4px;
+                  padding: 2px 7px;
+            }
+
+            .console-route {
+                  font-size: 12.5px;
+                  color: #cbd5e1;
+                  flex: 1;
+            }
+
+            .console-status {
+                  font-size: 11px;
+                  font-weight: 600;
+                  letter-spacing: 0.02em;
+                  color: #4ade80;
+                  opacity: 0;
+                  transition: opacity 0.4s ease;
+            }
+
+            .console-status.show {
+                  opacity: 1;
+            }
+
+            .console-body {
+                  padding: 18px 16px 20px;
+                  font-size: 12.5px;
+                  line-height: 1.9;
+                  color: #cbd5e1;
+                  white-space: pre-wrap;
+                  word-break: break-word;
+                  min-height: 210px;
+            }
+
+            .console-body .k {
+                  color: #a78bfa;
+            }
+
+            .console-body .s {
+                  color: #4ade80;
+            }
+
+            .console-body .p {
+                  color: #64748b;
+            }
+
+            .console-body .b {
+                  color: #fbbf24;
+            }
+
+            .console-cursor {
+                  color: #a78bfa;
+                  animation: blink 1s step-end infinite;
+            }
+
+            @keyframes blink {
+
+                  0%,
+                  100% {
+                        opacity: 1;
+                  }
+
+                  50% {
+                        opacity: 0;
+                  }
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                  .console-cursor {
+                        animation: none;
+                  }
             }
 
             /* STATS STRIP */
@@ -527,7 +641,7 @@
             }
 
             .stat-num span {
-                  color: #60a5fa;
+                  color: #a78bfa;
             }
 
             .stat-label {
@@ -545,11 +659,11 @@
             }
 
             #about .section-label span {
-                  color: #60a5fa;
+                  color: #a78bfa;
             }
 
             #about .section-label::after {
-                  background: #60a5fa;
+                  background: #a78bfa;
             }
 
             #about .section-heading {
@@ -563,7 +677,7 @@
                   right: -100px;
                   width: 400px;
                   height: 400px;
-                  background: radial-gradient(circle, rgba(96, 165, 250, 0.15) 0%, transparent 70%);
+                  background: radial-gradient(circle, rgba(167, 139, 250, 0.15) 0%, transparent 70%);
                   animation: pulseGlow 8s ease-in-out infinite;
                   pointer-events: none;
             }
@@ -578,7 +692,7 @@
             }
 
             #about .feature-card:hover {
-                  box-shadow: 0 8px 24px rgba(96, 165, 250, 0.15);
+                  box-shadow: 0 8px 24px rgba(167, 139, 250, 0.15);
             }
 
             #about .feature-card h4 {
@@ -619,7 +733,7 @@
             }
 
             .feature-card:hover {
-                  box-shadow: 0 8px 24px rgba(96, 165, 250, 0.15);
+                  box-shadow: 0 8px 24px rgba(167, 139, 250, 0.15);
                   transform: translateY(-2px);
             }
 
@@ -673,18 +787,18 @@
                   right: 20%;
                   width: 350px;
                   height: 350px;
-                  background: radial-gradient(circle, rgba(96, 165, 250, 0.15) 0%, transparent 70%);
+                  background: radial-gradient(circle, rgba(167, 139, 250, 0.15) 0%, transparent 70%);
                   animation: gradientShift 12s ease infinite reverse;
                   pointer-events: none;
 
             }
 
             #projects .section-label span {
-                  color: #60a5fa;
+                  color: #a78bfa;
             }
 
             #projects .section-label::after {
-                  background: #60a5fa;
+                  background: #a78bfa;
             }
 
             #projects .section-heading {
@@ -705,14 +819,14 @@
                   border-radius: 14px;
                   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
                   padding: 32px;
-                  border-top: 4px solid #2563eb;
+                  border-top: 4px solid #7c5cff;
                   transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
                   cursor: default;
             }
 
             .project-card:hover {
                   transform: translateY(-4px);
-                  box-shadow: 0 12px 40px rgba(96, 165, 250, 0.2);
+                  box-shadow: 0 12px 40px rgba(167, 139, 250, 0.2);
 
             }
 
@@ -760,8 +874,8 @@
             }
 
             .tag {
-                  background: rgba(37, 99, 235, 0.15);
-                  color: #60a5fa;
+                  background: rgba(124, 92, 255, 0.15);
+                  color: #a78bfa;
                   border-radius: 20px;
                   padding: 3px 10px;
                   font-size: 11px;
@@ -776,34 +890,34 @@
 
             .btn-sm-solid {
                   padding: 8px 16px;
-                  background: #2563eb;
+                  background: #7c5cff;
                   color: #fff;
                   border-radius: 6px;
                   font-size: 13px;
                   font-weight: 500;
                   text-decoration: none;
-                  border: 1px solid #2563eb;
+                  border: 1px solid #7c5cff;
                   transition: background 0.2s;
             }
 
             .btn-sm-solid:hover {
-                  background: #1d4ed8;
+                  background: #512bd4;
             }
 
             .btn-sm-ghost {
                   padding: 8px 16px;
                   background: transparent;
-                  color: #60a5fa;
+                  color: #a78bfa;
                   border-radius: 6px;
                   font-size: 13px;
                   font-weight: 500;
                   text-decoration: none;
-                  border: 1px solid #2563eb;
+                  border: 1px solid #7c5cff;
                   transition: background 0.2s;
             }
 
             .btn-sm-ghost:hover {
-                  background: rgba(37, 99, 235, 0.15);
+                  background: rgba(124, 92, 255, 0.15);
             }
 
             /* EXPERIENCE - Dark Section */
@@ -813,11 +927,11 @@
             }
 
             #experience .section-label span {
-                  color: #60a5fa;
+                  color: #a78bfa;
             }
 
             #experience .section-label::after {
-                  background: #60a5fa;
+                  background: #a78bfa;
             }
 
             #experience .section-heading {
@@ -858,15 +972,15 @@
                   width: 14px;
                   height: 14px;
                   border-radius: 50%;
-                  background: #2563eb;
+                  background: #7c5cff;
                   border: 2px solid #0f172a;
-                  box-shadow: 0 0 0 2px #2563eb;
+                  box-shadow: 0 0 0 2px #7c5cff;
             }
 
             .entry-card {
                   background: #1e293b;
                   border: 1px solid #334155;
-                  border-left: 4px solid #2563eb;
+                  border-left: 4px solid #7c5cff;
                   border-radius: 10px;
                   padding: 18px 20px;
             }
@@ -881,7 +995,7 @@
 
             .entry-card .entry-meta {
                   font-size: 12px;
-                  color: #60a5fa;
+                  color: #a78bfa;
                   font-family: var(--font-mono);
                   margin-bottom: 10px;
             }
@@ -904,9 +1018,33 @@
                   content: '→';
                   position: absolute;
                   left: 0;
-                  color: #2563eb;
+                  color: #7c5cff;
                   font-size: 11px;
                   top: 2px;
+            }
+
+            .project-card ul {
+                  list-style: none;
+                  padding: 0;
+                  margin: 14px 0 0;
+            }
+
+            .project-card ul li {
+                  font-size: 13.5px;
+                  color: #94a3b8;
+                  line-height: 1.7;
+                  padding-left: 16px;
+                  position: relative;
+                  margin-bottom: 6px;
+            }
+
+            .project-card ul li::before {
+                  content: '→';
+                  position: absolute;
+                  left: 0;
+                  color: #7c5cff;
+                  font-size: 11px;
+                  top: 3px;
             }
 
             .timeline-section-title {
@@ -932,7 +1070,7 @@
                   left: -100px;
                   width: 350px;
                   height: 350px;
-                  background: radial-gradient(circle, rgba(96, 165, 250, 0.12) 0%, transparent 70%);
+                  background: radial-gradient(circle, rgba(167, 139, 250, 0.12) 0%, transparent 70%);
                   animation: floatBubble 12s ease-in-out infinite reverse;
                   pointer-events: none;
             }
@@ -945,17 +1083,17 @@
                   width: 300px;
                   height: 300px;
                   border-radius: 50%;
-                  background: radial-gradient(circle, rgba(96, 165, 250, 0.08) 0%, transparent 70%);
+                  background: radial-gradient(circle, rgba(167, 139, 250, 0.08) 0%, transparent 70%);
                   animation: pulseGlow 10s ease-in-out infinite;
                   pointer-events: none;
             }
 
             #skills .section-label span {
-                  color: #60a5fa;
+                  color: #a78bfa;
             }
 
             #skills .section-label::after {
-                  background: #60a5fa;
+                  background: #a78bfa;
             }
 
             #skills .section-heading {
@@ -1005,8 +1143,6 @@
                   height: 20px;
             }
 
-            maintainability
-
             /* CONTACT - Dark Section */
             #contact {
                   background: #0f172a;
@@ -1014,11 +1150,11 @@
             }
 
             #contact .section-label span {
-                  color: #60a5fa;
+                  color: #a78bfa;
             }
 
             #contact .section-label::after {
-                  background: #60a5fa;
+                  background: #a78bfa;
             }
 
             .contact-grid {
@@ -1074,9 +1210,9 @@
             }
 
             .social-btn:hover {
-                  background: #2563eb;
+                  background: #7c5cff;
                   color: #fff;
-                  border-color: #2563eb;
+                  border-color: #7c5cff;
             }
 
             .contact-form {
@@ -1103,8 +1239,8 @@
             }
 
             .form-input:focus {
-                  border-color: #2563eb;
-                  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+                  border-color: #7c5cff;
+                  box-shadow: 0 0 0 2px rgba(124, 92, 255, 0.2);
             }
 
             textarea.form-input {
@@ -1114,7 +1250,7 @@
             .btn-full {
                   width: 100%;
                   padding: 15px;
-                  background: #2563eb;
+                  background: #7c5cff;
                   color: #fff;
                   border: none;
                   border-radius: 8px;
@@ -1127,7 +1263,7 @@
             }
 
             .btn-full:hover {
-                  background: #1d4ed8;
+                  background: #512bd4;
                   transform: translateY(-1px);
             }
 
@@ -1398,11 +1534,12 @@
                               I build backends for&nbsp;<span class="rotator" id="rotator">ASP.NET Core</span>
                         </p>
                         <p class="hero-desc">
-                              .NET Backend Developer specializing in clean, scalable RESTful APIs and production-ready
-                              systems. I turn complex business logic into elegant, maintainable architecture.
+                              .NET Backend Developer specializing in clean, scalable RESTful APIs, real-time systems,
+                              and production-ready backends. I turn complex business logic into elegant, maintainable
+                              architecture.
                         </p>
                         <div class="hero-ctas">
-                              <a href="https://drive.google.com/file/d/14fQgTVGroIGQrkuYerB1jgBVM0_zbz5H/view?usp=sharing"
+                              <a href="https://drive.google.com/file/d/1GOhppKgw815VzS_BHGmuD2dFAvhCWVRQ/view?usp=sharing"
                                     class="btn-solid">⬇ Download CV</a>
                               <a href="#contact" class="btn-ghost">Contact Me</a>
                         </div>
@@ -1418,67 +1555,14 @@
                               <h3>Beshoy Ashraf</h3>
                               <p>.NET Backend Developer</p>
                         </div>
-                        <div class="stack-grid">
-                              <div>
-                                    <div class="stack-category">Languages</div>
-                                    <div class="stack-items">
-                                          <div class="stack-item">
-                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
-                                                      alt="C#" />
-                                                C#
-                                          </div>
-                                          <div class="stack-item">
-                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
-                                                      alt="C++" />
-                                                C++
-                                          </div>
-                                          <div class="stack-item">
-                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
-                                                      alt="C" />
-                                                C
-                                          </div>
-                                    </div>
+                        <div class="console">
+                              <div class="console-bar">
+                                    <span class="method-badge">GET</span>
+                                    <span class="console-route">/api/beshoy</span>
+                                    <span class="console-status" id="consoleStatus"></span>
                               </div>
-                              <div>
-                                    <div class="stack-category">Frameworks</div>
-                                    <div class="stack-items">
-                                          <div class="stack-item">
-                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"
-                                                      alt=".NET" />
-                                                ASP.NET Core
-                                          </div>
-                                          <div class="stack-item">
-                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"
-                                                      alt=".NET 8" />
-                                                .NET 8
-                                          </div>
-                                    </div>
-                              </div>
-                              <div>
-                                    <div class="stack-category">Databases & Tools</div>
-                                    <div class="stack-items">
-                                          <div class="stack-item">
-                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
-                                                      alt="PostgreSQL" />
-                                                PostgreSQL
-                                          </div>
-                                          <div class="stack-item">
-                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
-                                                      alt="SQL Server" />
-                                                SQL Server
-                                          </div>
-                                          <div class="stack-item">
-                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
-                                                      alt="Docker" />
-                                                Docker
-                                          </div>
-                                          <div class="stack-item">
-                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-                                                      alt="Git" />
-                                                Git
-                                          </div>
-                                    </div>
-                              </div>
+                              <pre
+                                    class="console-body"><code id="consoleTyped"></code><span class="console-cursor">▊</span></pre>
                         </div>
                   </div>
             </div>
@@ -1505,7 +1589,8 @@
       <!-- ABOUT -->
       <section id="about">
             <div class="container">
-                  <div class="section-label"><span>About Me</span></div>
+                  <div class="section-label"><span class="route-tag"><span class="route-verb">GET</span>/about</span>
+                  </div>
                   <h2 class="section-heading">The person behind the code</h2>
                   <div class="about-grid reveal">
                         <div class="about-text">
@@ -1556,7 +1641,8 @@
       <!-- PROJECTS -->
       <section id="projects">
             <div class="container">
-                  <div class="section-label"><span>Projects</span></div>
+                  <div class="section-label"><span class="route-tag"><span class="route-verb">GET</span>/projects</span>
+                  </div>
                   <h2 class="section-heading">Production-grade systems built to last</h2>
                   <p class="projects-subtitle">A selection of full-stack backend applications solving real business
                         problems.</p>
@@ -1565,91 +1651,67 @@
                   <div class="project-card project-featured reveal" style="margin-bottom: 20px;">
                         <div class="project-card-header">
                               <div>
-                                    <div class="project-name">Maksby API</div>
-                                    <div class="project-type">Manufacturing Operations Management — Production-Ready
-                                          RESTful API</div>
+                                    <div class="project-name">Kalemny Shokran — Real-Time Chat API</div>
+                                    <div class="project-type">.NET 10, MediatR, EF Core, SignalR · Jul 2026 – Present
+                                    </div>
                               </div>
-
                         </div>
-                        <p class="project-desc">
-                              Designed and developed a production-ready RESTful API for end-to-end manufacturing
-                              operations management. Features centralized transaction handling for data consistency,
-                              JWT-based authentication with role-based access control, and financial modules covering
-                              profit calculation, expense tracking, and account balancing. Built on Clean Architecture
-                              principles for long-term scalability and maintainability.
-                        </p>
-                        <div class="tag-list">
-                              <span class="tag">ASP.NET Core</span>
-                              <span class="tag">Entity Framework Core</span>
-                              <span class="tag">PostgreSQL</span>
-                              <span class="tag">Docker</span>
-                              <span class="tag">JWT Auth</span>
-                              <span class="tag">Clean Architecture</span>
+                        <ul>
+                              <li>Designing and building a multi-layered RESTful API (API, Application, Domain,
+                                    Infrastructure) for a real-time chat platform</li>
+                              <li>Implementing use cases with MediatR to keep application logic decoupled and testable
+                              </li>
+                              <li>Developing endpoints for managing messages, conversations, users, and accounts,
+                                    including update, delete, and advanced querying</li>
+                              <li>Integrating SignalR for real-time messaging and instant notifications</li>
+                              <li>Applying JWT authentication, custom centralized exception handling, and
+                                    Swagger/OpenAPI documentation</li>
+                              <li>Configuring CORS and Entity Framework Core for a scalable Clean Architecture design
+                              </li>
+                        </ul>
+                        <div class="tag-list" style="margin-top:16px;">
+                              <span class="tag">.NET 10</span>
+                              <span class="tag">MediatR</span>
+                              <span class="tag">SignalR</span>
+                              <span class="tag">EF Core</span>
                         </div>
-
                         <div class="project-links">
-                              <a href="https://github.com/Beshoy-Ashraf/Maksby_APi.git" class="btn-sm-ghost"
-                                    target="_blank">GitHub →</a>
-                              <a href="https://maksby-a-pi.vercel.app" class="btn-sm-ghost" target="_blank">Live Preview
+                              <a href="https://github.com/Beshoy-Ashraf" class="btn-sm-ghost" target="_blank">GitHub
                                     →</a>
-
-
                         </div>
-                        <div class="project-live-preview">
-                              <div class="live-badge">
-                                    ● Live Preview
-                              </div>
-
-                              <iframe src="https://maksby-a-pi.vercel.app" title="Maksby Live Preview" loading="lazy"
-                                    allowfullscreen>
-                              </iframe>
-                        </div>
-
                   </div>
 
-
-                  <!-- 3-col grid -->
-                  <div class="project-grid">
-                        <div class="project-card reveal">
-                              <div class="project-name">Engas API</div>
-                              <div class="project-type">Fuel Station Management Platform</div>
-                              <p class="project-desc">
-                                    Scalable RESTful API for multi-branch fuel station operations. 7 core modules
-                                    including Store, Staff, Customer, Inventory, and Orders. Swagger docs, CORS
-                                    configuration, and integration testing baked in.
-                              </p>
-                              <div class="tag-list">
-                                    <span class="tag">ASP.NET Core</span>
-                                    <span class="tag">EF Core</span>
-                                    <span class="tag">PostgreSQL</span>
-                                    <span class="tag">JWT</span>
-                                    <span class="tag">Swagger</span>
-                              </div>
-                              <div class="project-links">
-                                    <a href="https://github.com/Beshoy-Ashraf/Engas" class="btn-sm-ghost"
-                                          target="_blank">GitHub →</a>
+                  <!-- Featured -->
+                  <div class="project-card project-featured reveal">
+                        <div class="project-card-header">
+                              <div>
+                                    <div class="project-name">Engas — Fuel Station Management API</div>
+                                    <div class="project-type">ASP.NET Core, EF Core, PostgreSQL · Mar 2026 – Apr 2026
+                                    </div>
                               </div>
                         </div>
-
-                        <div class="project-card reveal">
-                              <div class="project-name">Financial Engine</div>
-                              <div class="project-type">Accounting & Reporting Module</div>
-                              <p class="project-desc">
-                                    Modular financial system handling profit calculation, expense tracking, account
-                                    balancing, and PDF report generation. Integrated into the Maksby platform as a
-                                    standalone bounded context.
-                              </p>
-                              <div class="tag-list">
-                                    <span class="tag">C#</span>
-                                    <span class="tag">.NET 8</span>
-                                    <span class="tag">EF Core</span>
-                                    <span class="tag">PDF Gen</span>
-                                    <span class="tag">PostgreSQL</span>
-                              </div>
-                              <div class="project-links">
-                                    <a href="https://github.com/Beshoy-Ashraf/Maksby_APi.git" class="btn-sm-ghost"
-                                          target="_blank">GitHub →</a>
-                              </div>
+                        <ul>
+                              <li>Architected and developed a scalable RESTful API for multi-branch fuel station
+                                    operations</li>
+                              <li>Implemented Clean Architecture with layered separation (Controllers, Services,
+                                    Data, DTOs)</li>
+                              <li>Developed a secure JWT-based authentication system with role-based access (Store,
+                                    Staff, Customer)</li>
+                              <li>Integrated Swagger for API documentation and configured CORS for cross-origin
+                                    access</li>
+                              <li>Built 7 core modules including Store, Staff, Customer, Inventory, Orders, and PDF
+                                    generation</li>
+                              <li>Utilized Code-First approach with Entity Framework Core and PostgreSQL</li>
+                              <li>Implemented integration testing to ensure system reliability</li>
+                        </ul>
+                        <div class="tag-list" style="margin-top:16px;">
+                              <span class="tag">ASP.NET Core</span>
+                              <span class="tag">EF Core</span>
+                              <span class="tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                              <a href="https://github.com/Beshoy-Ashraf/Engas" class="btn-sm-ghost"
+                                    target="_blank">GitHub →</a>
                         </div>
                   </div>
             </div>
@@ -1658,7 +1720,8 @@
       <!-- EXPERIENCE & EDUCATION -->
       <section id="experience">
             <div class="container">
-                  <div class="section-label"><span>Experience & Education</span></div>
+                  <div class="section-label"><span class="route-tag"><span
+                                    class="route-verb">GET</span>/experience</span></div>
                   <h2 class="section-heading">Where I've been</h2>
                   <div class="exp-grid reveal">
                         <!-- Work -->
@@ -1719,6 +1782,25 @@
                                     </div>
                               </div>
                         </div>
+
+                        <!-- Achievements -->
+                        <div style="margin-top: 40px;">
+                              <div class="timeline-section-title">Achievements</div>
+                              <div class="timeline">
+                                    <div class="timeline-entry">
+                                          <div class="entry-card">
+                                                <h4>🏆 ECPC — 2nd Place, University Team</h4>
+                                                <div class="entry-meta">Egyptian Collegiate Programming Contest</div>
+                                                <ul>
+                                                      <li>Secured 2nd place at the university level with a team of
+                                                            competitors</li>
+                                                      <li>Demonstrated strong problem-solving, algorithmic thinking, and
+                                                            teamwork under time pressure</li>
+                                                </ul>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
                   </div>
             </div>
       </section>
@@ -1726,7 +1808,8 @@
       <!-- SKILLS -->
       <section id="skills">
             <div class="container">
-                  <div class="section-label"><span>Skills & Expertise</span></div>
+                  <div class="section-label"><span class="route-tag"><span class="route-verb">GET</span>/skills</span>
+                  </div>
                   <h2 class="section-heading">Technical toolkit</h2>
                   <div class="skills-grid reveal">
                         <div class="skill-card">
@@ -1772,13 +1855,21 @@
                               <div class="skill-row" style="font-size:12px;">
                                     🔌 RESTful APIs
                               </div>
+                              <div class="skill-row" style="font-size:12px;">
+                                    📨 MediatR
+                              </div>
+                              <div class="skill-row" style="font-size:12px;">
+                                    ⚡ SignalR
+                              </div>
                         </div>
                         <div class="skill-card">
-                              <div class="skill-card-title">Architecture</div>
+                              <div class="skill-card-title">Architecture & Practices</div>
                               <div class="skill-row">🏗 Clean Architecture</div>
                               <div class="skill-row">💉 Dependency Injection</div>
                               <div class="skill-row">🔷 SOLID Principles</div>
                               <div class="skill-row">🔐 JWT + RBAC</div>
+                              <div class="skill-row" style="font-size:12px;">✅ Unit & Integration Testing</div>
+                              <div class="skill-row" style="font-size:12px;">📄 API Documentation</div>
                         </div>
                         <div class="skill-card">
                               <div class="skill-card-title">Databases & Tools</div>
@@ -1810,7 +1901,9 @@
       <!-- CONTACT -->
       <section id="contact">
             <div class="container">
-                  <div class="section-label"><span>Get In Touch</span></div>
+                  <div class="section-label"><span class="route-tag"><span class="route-verb"
+                                    style="background:rgba(74,222,128,0.15);color:#4ade80;">POST</span>/contact</span>
+                  </div>
                   <div class="contact-grid">
                         <div class="reveal">
                               <h2 class="contact-heading">Let's build something great</h2>
@@ -1863,6 +1956,53 @@
       </footer>
 
       <script>
+            // API console — types out a JSON response token by token
+            (function () {
+                  const codeEl = document.getElementById('consoleTyped');
+                  const statusEl = document.getElementById('consoleStatus');
+                  if (!codeEl) return;
+                  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+                  const tokens = [
+                        ['{\n  ', 'p'], ['"name"', 'k'], [': ', 'p'], ['"Beshoy Ashraf"', 's'], [',\n  ', 'p'],
+                        ['"role"', 'k'], [': ', 'p'], ['".NET Backend Developer"', 's'], [',\n  ', 'p'],
+                        ['"location"', 'k'], [': ', 'p'], ['"Alexandria, EG"', 's'], [',\n  ', 'p'],
+                        ['"stack"', 'k'], [': [', 'p'], ['"ASP.NET Core"', 's'], [', ', 'p'], ['"EF Core"', 's'],
+                        [', ', 'p'], ['"SignalR"', 's'], [', ', 'p'], ['"MediatR"', 's'], ['],\n  ', 'p'],
+                        ['"clean_architecture"', 'k'], [': ', 'p'], ['true', 'b'], [',\n  ', 'p'],
+                        ['"status"', 'k'], [': ', 'p'], ['"available_for_hire"', 's'], ['\n}', 'p']
+                  ];
+
+                  function render() {
+                        tokens.forEach(([text, cls]) => {
+                              const span = document.createElement('span');
+                              span.className = cls;
+                              span.textContent = text;
+                              codeEl.appendChild(span);
+                        });
+                        if (statusEl) { statusEl.textContent = '200 OK'; statusEl.classList.add('show'); }
+                  }
+
+                  if (reduceMotion) {
+                        render();
+                  } else {
+                        let i = 0;
+                        const interval = setInterval(() => {
+                              if (i >= tokens.length) {
+                                    clearInterval(interval);
+                                    if (statusEl) { statusEl.textContent = '200 OK'; statusEl.classList.add('show'); }
+                                    return;
+                              }
+                              const [text, cls] = tokens[i];
+                              const span = document.createElement('span');
+                              span.className = cls;
+                              span.textContent = text;
+                              codeEl.appendChild(span);
+                              i++;
+                        }, 90);
+                  }
+            })();
+
             // Text rotator
             const words = ['ASP.NET Core', '.NET 8', 'EF Core', 'PostgreSQL', 'Clean Arch'];
             let idx = 0;
